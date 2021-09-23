@@ -52,7 +52,7 @@
                                      <li><a href="#">Denims</a></li>
                                  </ul>
                              </li>
-                             <li><a href="SignUp.aspx">Registeration</a></li>
+                             <li class="active"><a href="Registeration_Form.aspx">Registeration</a></li>
                          </ul>
                      </div>
                 </div>
