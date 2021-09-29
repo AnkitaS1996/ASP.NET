@@ -61,17 +61,24 @@
             <!--End NavBar-->
         </div>
         <hr /><hr />
+
         <div class="loginbox">
             <img src="Images/img5.png" alt="Alternate Text" class="User"/>
+
             <h2 style="color:chartreuse;">Log In Here</h2>
+
             <!--<from runat="server">-->
                 <asp:Label Text="Username" CssClass="lblusername" runat="server"></asp:Label>
+          
                 <asp:TextBox CssClass="txt_Username" runat="server" placeholder="Enter Username" AutoCompleteType="Disabled"></asp:TextBox>
+                
                 <asp:Label Text="Password" CssClass="lblPassword" runat="server"></asp:Label>
+            
                 <asp:TextBox CssClass="txt_Password" placeholder="**********" runat="server" MaxLength="8" TextMode="Password"  AutoCompleteType="Disabled" ></asp:TextBox>
+               
                 <asp:LinkButton Text="Forget Password" CssClass="btn_forget" runat="server"></asp:LinkButton><br />
                 <asp:Button text="Sign In" CssClass="btn_Submit" runat="server"/>
-                <asp:Button text="Sign UP" CssClass="btn_Signup" runat="server"/>
+                <asp:Button text="Sign UP" CssClass="btn_Signup" runat="server" OnClick="btn_SignUp_Click"/>
                 
 
             <!--</from>-->
