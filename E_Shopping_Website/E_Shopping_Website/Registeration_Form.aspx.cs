@@ -16,7 +16,7 @@ namespace E_Shopping_Website
 
         protected void btn_SignUp_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("SignUp.aspx");
         }
     }
 }
