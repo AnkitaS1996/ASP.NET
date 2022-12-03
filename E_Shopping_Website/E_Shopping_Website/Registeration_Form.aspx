@@ -77,7 +77,7 @@
                 <asp:TextBox CssClass="txt_Password" placeholder="**********" runat="server" MaxLength="8" TextMode="Password"  AutoCompleteType="Disabled" ></asp:TextBox>
                
                 <asp:LinkButton Text="Forget Password" CssClass="btn_forget" runat="server"></asp:LinkButton><br />
-                <asp:Button text="Sign In" CssClass="btn_Submit" runat="server"/>
+                <asp:Button text="Sign In" CssClass="btn_Submit" runat="server" OnClick="btn_Submit_Click"/>
                 <asp:Button text="Sign UP" CssClass="btn_Signup" runat="server" OnClick="btn_SignUp_Click"/>
                 
 

@@ -61,35 +61,44 @@
             </div>
          <!--End NavBar-->
         </div>
-        <hr />
+        <br />
         <div class="container-fluid">
-            <h2>
-            Sign Up Form
-        </h2>
-            <div class="row justify-content-center">
+            <h2>Sign Up Form</h2>
+            <div class="row">
                 <div class="col-12 col-sm-6 col-md-3">
                     <form class="form-container">
-                    <div class="form-group">
-                        <label for="Full_Name">Full Name :</label><br />
-                        <input type="text" class="form-control" id="Full_Name" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Full Name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">Email Address : </label><br />
-                        <input  type="email" class="form-control" id="Email" aria-describedby="emailhelp" autocomplete="off" placeholder="Enter Email"/>
-                    </div>
-                    <div class="form-group">
-                         <label for="Password">Password : </label><br />
-                        <input  type="password" class="form-control" id="Password" autocomplete="off" placeholder="Password"/>
-                    </div>
-                    <div class="form-group"> 
-                        <label for="ConfirmPass">Confim Password : </label><br />
-                       <input  type="password" class="form-control" id="ConfirmPass" autocomplete="off" placeholder="Confirm Password" />
-                    </div>
-                     <div class="form-group form-check"> 
-                       <input  type="checkbox" class="form-check-input" id="check"/>
-                         <label class="form-check" for="check1">Check Me</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="form-group">
+                        
+                            <label for="User_Name">Username :</label><br />
+                            <asp:TextBox ID="txt_Username" runat="server" class="form-control" aria-describedby="Namehelp" placeholder="Enter UserName"></asp:TextBox>
+                            <!--<input type="text" class="form-control" id="txt_User_Name" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter UserName"/>-->
+                        </div>
+                        <div class="form-group">
+                             <label for="Password">Password : </label><br />
+                             <asp:TextBox ID="txt_Pass" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Password"></asp:TextBox>
+                            <!--<input  type="password" class="form-control" id="txt_Password" autocomplete="off" placeholder="Password"/>-->
+                        </div>
+                        <div class="form-group"> 
+                            <label for="ConfirmPass">Confim Password : </label><br />
+                            <asp:TextBox ID="txt_C_Pass" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Confirm Password"></asp:TextBox>
+                           <!--<input  type="password" class="form-control" id="txt_ConfirmPass" autocomplete="off" placeholder="Confirm Password" />-->
+                        </div>
+                        <div class="form-group">
+                            <label for="Full_Name">Your Full Name :</label><br />
+                            <asp:TextBox ID="txt_Full_Name" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Name"></asp:TextBox>
+                            <!--<input type="text" class="form-control" id="txt_Full_Name" autocomplete="off" placeholder="Enter Your FullName"/>-->
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email Address :</label><br />
+                            <asp:TextBox ID="txt_email" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Email"></asp:TextBox>
+                            <!--<input  type="email" class="form-control" id="txt_Email" autocomplete="off" placeholder="Enter Email"/>-->
+                        </div>
+                   
+                         <div class="form-group form-check"> 
+                           <input  type="checkbox" class="form-check-input" id="check"/>
+                             <label class="form-check" for="check1">Check Me</label>
+                        </div>
+                        <asp:Button ID="btn_Submits" runat="server" Text="Sign Up" class="btn btn-primary" OnClick="btn_Submits_Click" />
                     </form>
                 </div>
             </div>
