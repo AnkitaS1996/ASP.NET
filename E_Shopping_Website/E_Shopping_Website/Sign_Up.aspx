@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registeration_Form.aspx.cs" Inherits="E_Shopping_Website.Registeration_Form" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sign_Up.aspx.cs" Inherits="E_Shopping_Website.Sign_Up" %>
 
 <!DOCTYPE html>
 
@@ -8,16 +8,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <link href="css/Registeration_Form.css" rel="stylesheet" />
+    <link href="css/Sign_Up.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-             <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -31,7 +30,7 @@
                     </div>
                      <div class="navbar-collapse collapse">
                          <ul class="nav navbar-nav navbar-right">
-                             <li><a href="Default.aspx">Home</a></li>
+                             <li class="active"><a href="Default.aspx">Home</a></li>
                               <li><a href ="#">About</a></li>
                              <li><a href ="#">Contact</a></li>
                              <li><a href ="#">Blog-</a></li>
@@ -53,52 +52,54 @@
                                      <li><a href="#">Denims</a></li>
                                  </ul>
                              </li>
-                             <li class="active"><a href="Registeration_Form.aspx">Registeration</a></li>
+                             <li><a href="Registeration_Form.aspx">Registeration</a></li>
                          </ul>
                      </div>
                 </div>
             </div>
-            <!--End NavBar-->
-        </div>
-        <hr /><hr />
-        <!-- Login Page Start -->
-        <div class="loginbox">
-            <img src="Images/img5.png" alt="Alternate Text" class="User"/>
-
-            <h2 style="color:chartreuse;">Log In Here</h2>
-
-            <!--<from runat="server">-->
-                <asp:Label Text="Username" CssClass="lblusername" runat="server"></asp:Label>
-          
-                <asp:TextBox ID="tb_Uname" CssClass="txt_Username" runat="server" placeholder="Enter Username" AutoCompleteType="Disabled" OnTextChanged="tb_Uname_TextChanged"></asp:TextBox>
-                
-                <asp:Label Text="Password" CssClass="lblPassword" runat="server"></asp:Label>
+         <!--End NavBar-->
+            <br />
             
-                <asp:TextBox ID="tb_Pass" CssClass="txt_Password" placeholder="**********" runat="server" MaxLength="8" TextMode="Password"  AutoCompleteType="Disabled" OnTextChanged="tb_Pass_TextChanged" ></asp:TextBox>
-                
-                <div class="col-xs-11 form-check"> 
-                           <input  type="checkbox" class="form-check-input" id="check"/>
-                             <label class="form-check" for="check1">Remember Me</label>
-                </div>
-                <asp:LinkButton Text="Forget Password" CssClass="btn_forget" runat="server"></asp:LinkButton><br />
-                
-                <asp:Button ID="bt_SignIn" text="Sign In" CssClass="btn_Submit" runat="server" OnClick="btn_Submit_Click"/>
-                <asp:Button text="Sign UP" CssClass="btn_Signup" runat="server" OnClick="btn_SignUp_Click"/>
-                <asp:Label ID="lblError" runat="server" Font-Size="25px" CssClass="text-danger"></asp:Label>
-
-            <!--</from>-->
-
         </div>
-        <!-- Middle Login End -->
-       
-         <!-- Footer Content Start -->
-        <!--<footer>
-            <div class="container">
-                <p class="pull-right"><a href="#">Back to Top</a></p>
-                <p>&copy;2020&CopyRight.in &middot; <a href="Default.aspx">Home</a>&middot;<a href="#">About</a>&middot;<a href="#">Contact Us</a>&middot;<a href="#">Products</a></p>
-            </div>
-        </footer>-->
-        <!-- Footer Content End -->
+         <h2>Sign Up Form</h2>
+        <div class="center-page">
+                <label class="col-xs-11" for="User_Name">Username </label><br/>
+                <div class="col-xs-11">
+                       <asp:TextBox ID="txt_Username" runat="server" class="form-control" placeholder="Enter UserName"></asp:TextBox>
+                </div>
+             <label class="col-xs-11" for="Password">Password :</label><br />
+                 <div class="col-xs-11">
+                        <asp:TextBox ID="txt_Pass" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
+                 </div>
+
+                <label class="col-xs-11" for="ConfirmPass">Confim Password : </label><br />
+                <div class="col-xs-11">
+                      <asp:TextBox ID="txt_C_Pass" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Confirm Password" TextMode="Password"></asp:TextBox>  
+                 </div>
+
+                 <label class="col-xs-11" for="Full_Name">Your Full Name :</label><br />
+                <div class="col-xs-11">
+                       <asp:TextBox ID="txt_Full_Name" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Name"></asp:TextBox>                      
+                </div>
+               <br />
+                <label class="col-xs-11" for="Email">Email Address :</label><br />
+                <div class="col-xs-11">
+                       <asp:TextBox ID="txt_email" runat="server" class="form-control" aria-describedby="Namehelp" autocomplete="off" placeholder="Enter Email"></asp:TextBox>                    
+                </div>
+               <div class="col-xs-11 form-check"> 
+                           <!--<input  type="checkbox" class="form-check-input" id="check"/>-->
+                             <label></label>
+                </div>
+                
+                <div class="col-xs-11">
+                     <asp:Button ID="btn_Submits" runat="server" Text="Sign Up" class="btn btn-primary" OnClick="btn_Submits_Click" />
+                     <asp:Label ID="lbl_Msg" runat="server"></asp:Label>
+                </div>
+           
+        </div>
+            
+
+        
     </form>
 </body>
 </html>

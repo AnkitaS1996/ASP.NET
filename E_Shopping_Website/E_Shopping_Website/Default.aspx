@@ -26,7 +26,7 @@
                             <span class="icon-bar"></span>
 
                         </button>
-                        <a class="navbar-brand" href="Default.aspx"><span><img src="ICon/Fork_Logo_PNG_ICON.ico" alt="E-Shopping" height="30" /></span>Shoppee</a>
+                        <a class="navbar-brand" href="Default.aspx"><span><img src="ICon/Fork_Logo_PNG_ICON.ico" alt="E-Shopping" height="30" /></span>E-Shoppee</a>
                     </div>
                      <div class="navbar-collapse collapse">
                          <ul class="nav navbar-nav navbar-right">
@@ -39,7 +39,7 @@
                                  <ul class="dropdown-menu">
                                      <li class="dropdown-header">Men</li>
                                      <li role="separator" class="divider "></li>
-                                     <li><a href="#">Shirts</a></li>
+                                     <li><a href="Product.aspx">Shirts</a></li>
                                      <li><a href="#">Jeans</a></li>
                                      <li><a href="#">Denims</a></li>
 
@@ -141,7 +141,7 @@
                     <p><a class="btn btn-primary" href="#" role="button">View More &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <img class="img-circle" src="Images/img3.jpg" alt="thumb" width="140" height="140" />
+                    <img class="img-circle" src="Images/img5.png" alt="thumb" width="140" height="140" />
                     <h2>clothing</h2>
                     <p>Clothing Quality is good,View the latest collection of photos for the new mobiles in high-resolution. 
                         All the images of newly launched mobiles, upcoming smartphones, leaked phones, concept & rumored mobiles are available from all angles in high definition. 
