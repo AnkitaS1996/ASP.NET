@@ -40,7 +40,7 @@ namespace E_Shopping_Website
                 Con_Open();
                 if (txt_Username.Text != "" && txt_Pass.Text != "" && txt_Full_Name.Text != "" && txt_email.Text != "")
                 {
-                    SqlCommand cmd = new SqlCommand("Insert into tbl_Users (Username,Password,Name,Email) values('" + txt_Username.Text + "', '" + txt_Pass.Text + "','" + txt_Full_Name.Text + "','" + txt_email.Text + "')");
+                    SqlCommand cmd = new SqlCommand("Insert into tbl_Users (Username,Password,Name,Email,User_Type) values('" + txt_Username.Text + "', '" + txt_Pass.Text + "','" + txt_Full_Name.Text + "','" + txt_email.Text + "','User')");
                     cmd.Connection = con;
                     cmd.ExecuteNonQuery();
                     Response.Write("<script> alert('Registeration Successfully Done'); </script>");

@@ -42,6 +42,15 @@ namespace E_Shopping_Website
         protected global::System.Web.UI.WebControls.TextBox tb_Pass;
 
         /// <summary>
+        /// Chk_RememberMe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Chk_RememberMe;
+
+        /// <summary>
         /// bt_SignIn control.
         /// </summary>
         /// <remarks>

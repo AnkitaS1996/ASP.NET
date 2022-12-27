@@ -77,7 +77,8 @@
                 <asp:TextBox ID="tb_Pass" CssClass="txt_Password" placeholder="**********" runat="server" MaxLength="8" TextMode="Password"  AutoCompleteType="Disabled" OnTextChanged="tb_Pass_TextChanged" ></asp:TextBox>
                 
                 <div class="col-xs-11 form-check"> 
-                           <input  type="checkbox" class="form-check-input" id="check"/>
+                          <asp:CheckBox ID="Chk_RememberMe" runat="server" cssclass="form-check-input" />
+                           <!--<input  type="checkbox" class="form-check-input" id="check"/>-->
                              <label class="form-check" for="check1">Remember Me</label>
                 </div>
                 <asp:LinkButton Text="Forget Password" CssClass="btn_forget" runat="server"></asp:LinkButton><br />

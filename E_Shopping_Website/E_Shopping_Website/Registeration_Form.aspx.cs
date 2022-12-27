@@ -31,6 +31,16 @@ namespace E_Shopping_Website
         {
             tb_Uname.Focus();
 
+            if(!IsPostBack)
+            {
+                if(Request.Cookies["UName"] != null && Request.Cookies["UPWD"] != null)
+                {
+                    tb_Uname.Text = Request.Cookies["UName"].Value;
+                    tb_Pass.Text = Request.Cookies["UPWD"].Value;
+                    Chk_RememberMe.Checked = true;
+                }
+            }
+
         }
         protected void tb_Uname_TextChanged(object sender, EventArgs e)
         {
@@ -49,6 +59,19 @@ namespace E_Shopping_Website
             SqlCommand cmd = new SqlCommand("select User_ID from tbl_Users where Username= '" + tb_Uname.Text + "' And Password = '" + tb_Pass.Text + "'",con);
             if(Convert.ToInt32(cmd.ExecuteScalar()) > 0)
             {
+                if(Chk_RememberMe.Checked)
+                {
+                    Response.Cookies["UName"].Value = tb_Uname.Text;
+                    Response.Cookies["UPWD"].Value = tb_Pass.Text;
+
+                    Response.Cookies["UName"].Expires = DateTime.Now.AddDays(1);
+                    Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(1);
+                }
+                else
+                {
+                    Response.Cookies["UName"].Expires = DateTime.Now.AddDays(-1);
+                    Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(-1);
+                }
                 // Response.Write("<script> alert('login successfully Done');</script>");
                 Session["Username"] = tb_Uname.Text;
                 Response.Redirect("~/UserHome.aspx");
