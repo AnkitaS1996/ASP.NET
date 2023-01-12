@@ -56,7 +56,7 @@
                                <!--<li>
                                <asp:Button ID="btnlogout" CssClass="btn btn-default nav" runat="server" Text="Sign Out" />
                              </li>-->
-                             <li class="active"><a href="Registeration_Form.aspx">Logout</a></li>
+                             <li class="active"><a href="Default.aspx">Logout</a></li>
                          </ul>
                      </div>
                 </div>

@@ -68,7 +68,7 @@
         </div>
     </form>
      <!-- Footer Content Start -->
-        <footer>
+        <footer style="position:fixed;bottom:0px">
             <div class="container">
                 <p class="pull-right"><a href="#">Back to Top</a></p>
                 <p>&copy;2020&CopyRight.in &middot; <a href="Default.aspx">Home</a>&middot;<a href="#">About</a>&middot;<a href="#">Contact Us</a>&middot;<a href="#">Products</a></p>

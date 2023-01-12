@@ -5,11 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>My E-Shopping Website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
     <link href="css/Registeration_Form.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -69,9 +69,9 @@
 
             <!--<from runat="server">-->
                 <asp:Label Text="Username" CssClass="lblusername" runat="server"></asp:Label>
-          
+                <!--<input id="tb_Uname" type="text" class="txt_Username" placeholder="Enter Username" AutoCompleteType="Disabled" OnTextChanged="tb_Uname_TextChanged"/>-->
                 <asp:TextBox ID="tb_Uname" CssClass="txt_Username" runat="server" placeholder="Enter Username" AutoCompleteType="Disabled" OnTextChanged="tb_Uname_TextChanged"></asp:TextBox>
-                
+               
                 <asp:Label Text="Password" CssClass="lblPassword" runat="server"></asp:Label>
             
                 <asp:TextBox ID="tb_Pass" CssClass="txt_Password" placeholder="**********" runat="server" MaxLength="8" TextMode="Password"  AutoCompleteType="Disabled" OnTextChanged="tb_Pass_TextChanged" ></asp:TextBox>
@@ -92,14 +92,14 @@
         </div>
         <!-- Middle Login End -->
        
-         <!-- Footer Content Start -->
-        <!--<footer>
+    </form>
+     <!-- Footer Content Start -->
+        <footer>
             <div class="container">
                 <p class="pull-right"><a href="#">Back to Top</a></p>
                 <p>&copy;2020&CopyRight.in &middot; <a href="Default.aspx">Home</a>&middot;<a href="#">About</a>&middot;<a href="#">Contact Us</a>&middot;<a href="#">Products</a></p>
             </div>
-        </footer>-->
+        </footer>
         <!-- Footer Content End -->
-    </form>
 </body>
 </html>

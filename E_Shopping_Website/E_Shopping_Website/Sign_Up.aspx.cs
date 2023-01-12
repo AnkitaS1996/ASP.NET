@@ -46,9 +46,9 @@ namespace E_Shopping_Website
                     Response.Write("<script> alert('Registeration Successfully Done'); </script>");
                     Con_Close();
                     Clear_Controls();
+                    Response.Redirect("~/Registeration_Form.aspx");
                     lbl_Msg.Text = "Registeration Successfully Done";
                     lbl_Msg.ForeColor = System.Drawing.Color.Green;
-
 
                 }
             }
@@ -105,6 +105,7 @@ namespace E_Shopping_Website
             txt_C_Pass.Text = "";
             txt_Full_Name.Text = "";
             txt_email.Text = "";
+            
         }
     }
 }
